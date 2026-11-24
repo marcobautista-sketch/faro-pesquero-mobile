@@ -117,7 +117,7 @@ export default function LogScreen() {
 
 const styles = StyleSheet.create({
   filters: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-  filter: { minHeight: 48, paddingHorizontal: 14, borderRadius: 999, borderWidth: 2, justifyContent: 'center' },
+  filter: { minHeight: 64, paddingHorizontal: 16, borderRadius: 999, borderWidth: 2, justifyContent: 'center' },
   between: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 },
   row: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
