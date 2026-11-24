@@ -104,7 +104,7 @@ export function BigButton({
       accessibilityLabel={accessibilityLabel ?? label}
       style={({ pressed }) => [
         styles.bigButton,
-        { backgroundColor: color, minHeight: compact ? 56 : 72, opacity: disabled ? 0.45 : 1 },
+        { backgroundColor: color, minHeight: compact ? 64 : 72, opacity: disabled ? 0.45 : 1 },
         pressed && { transform: [{ scale: 0.98 }], opacity: 0.85 },
       ]}
     >
