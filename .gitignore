@@ -39,3 +39,10 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Modelo empaquetado: se genera con npm run build:model
+src/model/generated/
+
+# Configuración local de herramientas
+.claude/
+AGENTS.md

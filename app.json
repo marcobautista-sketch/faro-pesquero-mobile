@@ -1,17 +1,21 @@
 {
   "expo": {
-    "name": "faro-pesquero-mobile",
+    "name": "Faro Pesquero",
     "slug": "faro-pesquero-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "scheme": "faropesquero",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#040C18",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "pe.faropesquero.app"
     },
     "android": {
+      "package": "pe.faropesquero.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#040C18",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -20,6 +24,28 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Faro Pesquero escucha el mar para reconocer el canto de piqueros, pelícanos y gaviotas."
+        }
+      ],
+      "expo-asset",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Faro Pesquero usa tu posición para guiarte a las zonas de pesca y anotar dónde se detectó cada ave."
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Faro Pesquero usa los sensores de movimiento y presión para medir el oleaje y anticipar mal tiempo."
+        }
+      ]
+    ]
   }
 }
